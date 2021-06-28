@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matheus\\Desktop\\teste\\teste.API\\teste.API.csproj": {}
+    "C:\\Users\\Matheus\\Desktop\\teste\\teste.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matheus\\Desktop\\teste\\teste.API\\teste.API.csproj": {
+    "C:\\Users\\Matheus\\Desktop\\teste\\teste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\teste\\teste.API\\teste.API.csproj",
-        "projectName": "teste.API",
-        "projectPath": "C:\\Users\\Matheus\\Desktop\\teste\\teste.API\\teste.API.csproj",
+        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\teste\\teste.csproj",
+        "projectName": "teste",
+        "projectPath": "C:\\Users\\Matheus\\Desktop\\teste\\teste.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Desktop\\teste\\teste.API\\obj\\",
+        "outputPath": "C:\\Users\\Matheus\\Desktop\\teste\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,21 +41,6 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

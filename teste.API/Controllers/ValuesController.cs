@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using teste.API.Data;
 using teste.API.Model;
 
 namespace teste.API.Controllers
@@ -11,36 +12,24 @@ namespace teste.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public DataContext _context { get; }
+        public ValuesController(DataContext context)
+        {
+            _context = context;
+
+        }
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<Evento>> Get()
         {
-            return new Evento[]{
-                
-                new Evento() {
-                    eventoId = 1,
-                    tema = "Angular e .NET Core",
-                    local = "Ribeirão Preto",
-                    lote = "1º Lote",
-                    qtdPessoas = 250,
-                    dataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy")
-                },
-                new Evento() {
-                    eventoId = 2,
-                    tema = "Angular e .NET Core",
-                    local = "São Paulo",
-                    lote = "1º Lote",
-                    qtdPessoas = 250,
-                    dataEvento = DateTime.Now.AddDays(3).ToString("dd/MM/yyyy")
-                }
-            };
+            return _context.Eventos.ToList();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Evento> Get(int id)
         {
-            return "value";
+            return _context.Eventos.FirstOrDefault( x => x.eventoId == id);
         }
 
         // POST api/values
