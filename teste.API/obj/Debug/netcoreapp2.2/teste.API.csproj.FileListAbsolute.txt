@@ -3,6 +3,10 @@ C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.API.runti
 C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.API.runtimeconfig.dev.json
 C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.API.dll
 C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.API.pdb
+C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.Domain.dll
+C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.Repository.dll
+C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.Domain.pdb
+C:\Users\Matheus\Desktop\teste\teste.API\bin\Debug\netcoreapp2.2\teste.Repository.pdb
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.csprojAssemblyReference.cache
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.csproj.CoreCompileInputs.cache
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.RazorAssemblyInfo.cache
@@ -10,5 +14,6 @@ C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.Razor
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.AssemblyInfoInputs.cache
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.AssemblyInfo.cs
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.RazorTargetAssemblyInfo.cache
+C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.csproj.CopyComplete
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.dll
 C:\Users\Matheus\Desktop\teste\teste.API\obj\Debug\netcoreapp2.2\teste.API.pdb

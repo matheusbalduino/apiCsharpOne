@@ -22,6 +22,8 @@ namespace teste.API.Migrations
 
                     b.Property<string>("dataEvento");
 
+                    b.Property<string>("imageUrl");
+
                     b.Property<string>("local");
 
                     b.Property<string>("lote");

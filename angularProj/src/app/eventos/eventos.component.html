@@ -1,15 +1,64 @@
-<p>
-  eventos works!
-</p>
-<hr/>
-<div *ngFor="let evento of eventos">
-  <ul style="list-style: none;">
-    <li>Tema: {{evento.tema}}</li>
-    <li>Local: {{evento.local}}</li>
-    <li>Data: {{evento.dataEvento}}</li>
-    <li>Quantidade: {{evento.qtdPessoas}}</li>
-    <li>Lote: {{evento.lote}}</li>
-  </ul>
-  <hr/>
+<!-- Campo de busca -->
+<div class="row g-3">
+  <div class="col-auto">
+    <input type="Text"
+    class="form-control" 
+    placeholder="Buscar"
+    [(ngModel)] = "filtroLista"
+    />
+  </div>
+  <div class="col-auto">
+    <button class="btn btn-success mb-3" > Buscar </button>
+  </div>
 </div>
-
+<!-- label da palavra buscada -->
+<label class="text text-center">Filtro: {{filtroLista}}</label>
+<!-- tabela de eventos -->
+<table class="table table-dark table-striped">
+  <!-- header da tabela -->
+  <thead >
+    <tr >
+      <th  class=" text text-center">
+      <button class="btn btn-outline-success" (click) = "showImg()"> Mostrar Imagem </button> 
+      </th>
+      <th>Id            </th>
+      <th>Tema          </th>
+      <th>Local         </th>
+      <th>Data          </th>
+      <th>Qtd Pessoas   </th>
+      <th>Lote          </th>
+      <th>Opções        </th>
+    </tr>
+  </thead>
+  <tbody *ngIf="eventos && eventos.length">
+    <!-- informações da tabela -->
+    <tr *ngFor="let evento of eventos">
+      <td class=" text text-center">
+       <img *ngIf="mostrarImg"
+        src="http://localhost:5000/img/{{evento.imageUrl}}" 
+       [style.width.px]  = "imageWidth"
+       [style.heigth.px] = "imageHeigth"/>   
+      </td>
+      <td>{{evento.eventoId}}     </td>
+      <td>{{evento.tema}}         </td>
+      <td>{{evento.local}}        </td>
+      <td>{{evento.dataEvento}}   </td>
+      <td>{{evento.qtdPessoas}}   </td>
+      <td>{{evento.lote}}         </td>
+      <td>
+        <button class="btn btn-success"></button>
+        <button class="btn btn-danger"></button>
+      </td>
+    </tr>
+  </tbody>
+  <!-- footer da tabela -->
+  <tfoot *ngIf="!eventos.length">
+    <tr>
+      <td colspan="8" class="text-center">
+        <h4>
+          Nenhum evento encontrado
+        </h4>
+      </td>
+    </tr>
+  </tfoot>
+</table>

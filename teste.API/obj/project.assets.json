@@ -4597,6 +4597,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "teste.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/teste.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/teste.Domain.dll": {}
+        }
+      },
+      "teste.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "teste.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/teste.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/teste.Repository.dll": {}
+        }
       }
     }
   },
@@ -12403,6 +12426,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "teste.Domain/1.0.0": {
+      "type": "project",
+      "path": "../teste.Domain/teste.Domain.csproj",
+      "msbuildProject": "../teste.Domain/teste.Domain.csproj"
+    },
+    "teste.Repository/1.0.0": {
+      "type": "project",
+      "path": "../teste.Repository/teste.Repository.csproj",
+      "msbuildProject": "../teste.Repository/teste.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12410,7 +12443,9 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "teste.Domain >= 1.0.0",
+      "teste.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12442,7 +12477,14 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Matheus\\Desktop\\teste\\teste.Domain\\teste.Domain.csproj": {
+              "projectPath": "C:\\Users\\Matheus\\Desktop\\teste\\teste.Domain\\teste.Domain.csproj"
+            },
+            "C:\\Users\\Matheus\\Desktop\\teste\\teste.Repository\\teste.Repository.csproj": {
+              "projectPath": "C:\\Users\\Matheus\\Desktop\\teste\\teste.Repository\\teste.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

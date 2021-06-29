@@ -48,6 +48,7 @@ namespace teste.API
             }
 
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

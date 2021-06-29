@@ -8,7 +8,7 @@ using teste.API.Data;
 namespace teste.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210628132724_init")]
+    [Migration("20210628231300_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,8 @@ namespace teste.API.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("dataEvento");
+
+                    b.Property<string>("imageUrl");
 
                     b.Property<string>("local");
 

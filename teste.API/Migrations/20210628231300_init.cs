@@ -16,7 +16,8 @@ namespace teste.API.Migrations
                     dataEvento = table.Column<string>(nullable: true),
                     tema = table.Column<string>(nullable: true),
                     qtdPessoas = table.Column<int>(nullable: false),
-                    lote = table.Column<string>(nullable: true)
+                    lote = table.Column<string>(nullable: true),
+                    imageUrl = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
