@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using teste.API.Data;
-using teste.API.Model;
+using teste.Repository;
 
 namespace teste.API.Controllers
 {
@@ -14,8 +13,8 @@ namespace teste.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        public DataContext _context { get; }
-        public ValuesController(DataContext context)
+        public testeContext _context { get; }
+        public ValuesController(testeContext context)
         {
             _context = context;
 
@@ -26,7 +25,7 @@ namespace teste.API.Controllers
         {
             try
             {
-                var results = await _context.Eventos.ToListAsync();
+                var results = await _context.Evento.ToListAsync();
 
                 return Ok(results);
             }
@@ -44,7 +43,7 @@ namespace teste.API.Controllers
             
             try
             {
-                var result = await _context.Eventos.FirstOrDefaultAsync( x => x.eventoId == id);
+                var result = await _context.Evento.FirstOrDefaultAsync( x => x.Id == id);
 
                 return Ok(result);
 

@@ -4,7 +4,7 @@ namespace teste.Domain
 {
     public class Lote
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string nome { get; set; }
         public decimal preco { get; set; }
         public DateTime? dataInicio { get; set; }
